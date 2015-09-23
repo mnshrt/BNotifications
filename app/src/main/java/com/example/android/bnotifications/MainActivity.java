@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         notification.setSmallIcon(R.mipmap.ic_launcher);
             notification.setTicker("this is the ticker");
             notification.setWhen(System.currentTimeMillis());
-            notification.setContentTitle("here is the title");
-            notification.setContentText("i m the body text of ur notificqation");
+            notification.setContentTitle("here is the title ");
+            notification.setContentText("i m the body text of ur notification");
             Intent intent = new Intent(this,MainActivity.class);
             PendingIntent pendingIntent =PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
             notification.setContentIntent(pendingIntent);
